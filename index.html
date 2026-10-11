@@ -1,11 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bloom and beyond</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom & Beyond</title>
+  <link href="./src/output.css" rel="stylesheet">
 </head>
-<body>
-    
+<body class="min-h-screen bg-[#F7F5EF] text-[#293B2B]">
+
+  <header class="bg-[#293B2B] px-6 py-5 text-white">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between">
+      <a href="#" class="text-2xl font-bold tracking-wide">Bloom & Beyond</a>
+      <span class="hidden text-sm sm:block">Grow something beautiful.</span>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-6 py-12">
+    <section class="mb-12 text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#66816A]">
+        Our UI collection
+      </p>
+      <h1 class="mb-4 text-4xl font-bold sm:text-5xl">
+        Bloom & Beyond
+      </h1>
+      <p class="mx-auto max-w-2xl text-lg text-[#667064]">
+        A reusable collection of buttons, cards, and alerts inspired by nature.
+      </p>
+    </section>
+
+    <section class="mb-12 rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+      <h2 class="mb-2 text-2xl font-bold">Button Garden</h2>
+      <p class="mb-6 text-[#667064]">
+        Explore our reusable button styles and interactive states.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4">
+        <button class="btn-primary">Shop plants</button>
+        <button class="btn-secondary">Explore garden</button>
+        <button class="btn-outline">Learn more</button>
+        <button class="btn-primary" disabled>Unavailable</button>
+      </div>
+    </section>
+
+    <section class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+      <h2 class="mb-2 text-2xl font-bold">Growing our library</h2>
+      <p class="text-[#667064]">
+        Next, we will add plant cards, product cards, and success, warning,
+        error, and information alerts.
+      </p>
+    </section>
+  </main>
+
+  <footer class="border-t border-[#DDE3D8] px-6 py-6 text-center text-sm text-[#667064]">
+    Bloom & Beyond · A collaborative Tailwind CSS project
+  </footer>
+
 </body>
 </html>
