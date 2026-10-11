@@ -1,0 +1,18 @@
+
+@import "tailwindcss";
+
+@source "../index.html";
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-[#3F6948] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#2F5237] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg bg-[#E5EBDD] px-5 py-3 font-semibold text-[#293B2B] transition-colors hover:bg-[#D3DFC9] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-lg border-2 border-[#3F6948] px-5 py-3 font-semibold text-[#3F6948] transition-colors hover:bg-[#E5EBDD] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+}
