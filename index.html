@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,26 +42,145 @@
       </div>
     </section>
 
-    <section class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <section class="mb-12 rounded-2xl bg-white p-6 shadow-sm sm:p-8">
       <h2 class="mb-2 text-2xl font-bold">Growing our library</h2>
       <p class="text-[#667064]">
         Next, we will add plant cards, product cards, and success, warning,
         error, and information alerts.
       </p>
     </section>
+
+<!-- GARDEN CARDS -->
+<section class="mb-12 rounded-2xl border border-[#DDE3D8] bg-white p-5 sm:p-8 lg:p-10">
+
+  <!-- Section heading -->
+  <div class="mb-8">
+    <p class="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-[#66816A]">
+      Our collection
+    </p>
+
+    <h2 class="mb-2 text-3xl font-bold tracking-tight text-[#293B2B] sm:text-4xl">
+      Garden Cards
+    </h2>
+
+    <p class="max-w-2xl text-sm leading-6 text-[#667064] sm:text-base">
+      Discover our favorite plants and meet our gardening experts.
+    </p>
+  </div>
+
+  <!-- Responsive two-card grid -->
+  <div class="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
+
+    <!-- PRODUCT CARD -->
+    <article class="card">
+
+      <!-- Small, consistent product image -->
+      <img
+        src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=900&q=80"
+        alt="Green indoor Monstera plant"
+        class="card-image"
+      >
+
+      <!-- Product content -->
+      <div class="card-body">
+
+        <div>
+          <span class="mb-3 inline-block rounded-full bg-[#E5EBDD] px-3 py-1 text-xs font-semibold text-[#293B2B]">
+            Indoor plant
+          </span>
+
+          <h3 class="card-title">
+            Monstera Deliciosa
+          </h3>
+
+          <p class="card-text">
+            Add a tropical touch to your home with this beautiful green plant.
+            Its distinctive leaves make it a lovely choice for indoor spaces.
+          </p>
+        </div>
+
+        <!-- Footer stays at the bottom -->
+        <div class="card-footer">
+          <span class="text-xl font-bold text-[#293B2B]">
+            $24.00
+          </span>
+
+          <button type="button" class="btn-primary">
+            View plant <span aria-hidden="true" class="ml-2">→</span>
+          </button>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- PROFILE CARD -->
+    <article class="card">
+
+      <!-- Compact expert profile image area -->
+      <div class="profile-banner">
+
+        <img
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+          alt="Portrait of a gardening expert"
+          class="profile-avatar"
+        >
+
+        <h3 class="text-xl font-bold text-white">
+          Sarah Green
+        </h3>
+
+        <p class="mt-1 text-sm text-[#D3DFC9]">
+          Plant Care Specialist
+        </p>
+
+      </div>
+
+      <!-- Profile content -->
+      <div class="card-body">
+
+        <div>
+          <span class="mb-3 inline-block rounded-full bg-[#E5EBDD] px-3 py-1 text-xs font-semibold text-[#293B2B]">
+            Meet our expert
+          </span>
+
+          <h3 class="card-title">
+            Your Gardening Guide
+          </h3>
+
+          <p class="card-text">
+            Sarah shares practical tips on choosing plants, watering correctly,
+            and creating beautiful green spaces at home.
+          </p>
+        </div>
+
+        <!-- Footer stays at the bottom -->
+        <div class="card-footer">
+          <span class="text-sm font-medium text-[#667064]">
+            Plant care expert
+          </span>
+
+          <button type="button" class="btn-secondary">
+            View profile <span aria-hidden="true" class="ml-2">→</span>
+          </button>
+        </div>
+
+      </div>
+    </article>
+
+  </div>
+</section>
+
   </main>
 
-  
-<footer class="border-t border-[#DDE3D8] bg-[#293B2B] px-6 py-8 text-center text-white">
-  <h2 class="mb-2 text-xl font-bold">Bloom & Beyond</h2>
-  <p class="mb-4 text-sm text-[#E5EBDD]">
-    Grow something beautiful.
-  </p>
-  <p class="text-xs text-[#D3DFC9]">
-    © 2026 Bloom & Beyond. All rights reserved.
-  </p>
-</footer>
-
+  <footer class="border-t border-[#DDE3D8] bg-[#293B2B] px-6 py-8 text-center text-white">
+    <h2 class="mb-2 text-xl font-bold">Bloom & Beyond</h2>
+    <p class="mb-4 text-sm text-[#E5EBDD]">
+      Grow something beautiful.
+    </p>
+    <p class="text-xs text-[#D3DFC9]">
+      © 2026 Bloom & Beyond. All rights reserved.
+    </p>
+  </footer>
 
 </body>
 </html>

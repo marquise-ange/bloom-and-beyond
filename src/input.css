@@ -1,18 +1,60 @@
 
 @import "tailwindcss";
-
-@source "../index.html";
-
 @layer components {
+ 
   .btn-primary {
     @apply inline-flex items-center justify-center rounded-lg bg-[#3F6948] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#2F5237] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
   }
 
+  /* Secondary button */
   .btn-secondary {
     @apply inline-flex items-center justify-center rounded-lg bg-[#E5EBDD] px-5 py-3 font-semibold text-[#293B2B] transition-colors hover:bg-[#D3DFC9] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
   }
 
+  /* Outline button */
   .btn-outline {
     @apply inline-flex items-center justify-center rounded-lg border-2 border-[#3F6948] px-5 py-3 font-semibold text-[#3F6948] transition-colors hover:bg-[#E5EBDD] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
   }
+
+  
+  /* Shared card */
+  .card {
+    @apply flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-[#DDE3D8] bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg;
+  }
+
+  /* Product image: fixed, compact height */
+  .card-image {
+    @apply block h-48 w-full shrink-0 object-cover sm:h-56;
+  }
+
+  /* Card content fills remaining height */
+  .card-body {
+    @apply flex flex-1 flex-col justify-between p-5 sm:p-6;
+  }
+
+  /* Consistent title spacing */
+  .card-title {
+    @apply mb-3 text-xl font-bold leading-7 text-[#293B2B];
+  }
+
+  /* Consistent description area */
+  .card-text {
+    @apply mb-6 min-h-24 text-sm leading-6 text-[#667064];
+  }
+
+  /* Aligned card footer */
+  .card-footer {
+    @apply mt-auto flex min-h-16 flex-wrap items-center justify-between gap-3 border-t border-[#DDE3D8] pt-4;
+  }
+
+  /* Dark green expert banner */
+  .profile-banner {
+    @apply flex h-48 shrink-0 flex-col items-center justify-center bg-[#293B2B] px-4 text-center sm:h-56;
+  }
+
+  /* Smaller circular portrait */
+  .profile-avatar {
+    @apply mb-3 h-20 w-20 rounded-full border-4 border-white object-cover sm:h-24 sm:w-24;
+  }
+
 }
