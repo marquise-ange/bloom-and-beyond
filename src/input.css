@@ -4,6 +4,7 @@
 @source "../index.html";
 
 @layer components {
+  /* Buttons */
   .btn-primary {
     @apply inline-flex items-center justify-center rounded-lg bg-[#3F6948] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#2F5237] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
   }
@@ -16,7 +17,7 @@
     @apply inline-flex items-center justify-center rounded-lg border-2 border-[#3F6948] px-5 py-3 font-semibold text-[#3F6948] transition-colors hover:bg-[#E5EBDD] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
   }
 
-  /* ALERTS */
+  /* Alerts */
   .alert {
     @apply flex items-start gap-3 rounded-xl border p-4;
   }
@@ -49,7 +50,7 @@
     @apply border-blue-200 bg-blue-50 text-blue-800;
   }
 
-  /* CARDS */
+  /* Cards */
   .card {
     @apply flex flex-col overflow-hidden rounded-2xl border border-[#DDE3D8] bg-white shadow-sm;
   }
@@ -74,7 +75,7 @@
     @apply mt-6 flex flex-wrap items-center justify-between gap-4;
   }
 
-  /* PROFILE */
+  /* Profile */
   .profile-banner {
     @apply flex flex-col items-center bg-[#293B2B] px-6 py-8 text-center;
   }
