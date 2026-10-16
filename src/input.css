@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
-@layer components {
+@source "../index.html";
 
-  /* PRIMARY BUTTON */
+@layer components {
+  /* Primary button */
   .btn-primary {
     @apply inline-flex items-center justify-center rounded-lg bg-[#3F6948] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#2F5237] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
   }
@@ -17,74 +18,77 @@
     @apply inline-flex items-center justify-center rounded-lg border-2 border-[#3F6948] px-5 py-3 font-semibold text-[#3F6948] transition-colors hover:bg-[#E5EBDD] focus:outline-2 focus:outline-offset-2 focus:outline-[#3F6948] disabled:cursor-not-allowed disabled:opacity-50;
   }
 
-  /* BASE ALERT */
+  /* Shared card */
+  .card {
+    @apply flex flex-col overflow-hidden rounded-2xl border border-[#DDE3D8] bg-white shadow-sm;
+  }
+
+  /* Product image */
+  .card-image {
+    @apply h-56 w-full object-cover;
+  }
+
+  /* Card content */
+  .card-body {
+    @apply flex flex-1 flex-col justify-between gap-6 p-5 sm:p-6;
+  }
+
+  /* Card title */
+  .card-title {
+    @apply text-xl font-bold text-[#293B2B];
+  }
+
+  /* Card description */
+  .card-text {
+    @apply mb-6 text-sm leading-6 text-[#667064];
+  }
+
+  /* Card footer */
+  .card-footer {
+    @apply mt-6 flex flex-wrap items-center justify-between gap-4;
+  }
+
+  /* Expert profile banner */
+  .profile-banner {
+    @apply flex flex-col items-center bg-[#293B2B] px-6 py-8 text-center;
+  }
+
+  /* Circular profile portrait */
+  .profile-avatar {
+    @apply mb-4 size-24 rounded-full border-4 border-[#D3DFC9] object-cover;
+  }
+
+  /* Alert base */
   .alert {
     @apply flex items-start gap-3 rounded-xl border p-4;
   }
 
   .alert-icon {
-    @apply mt-0.5 size-6 shrink-0;
+    @apply mt-0.5 shrink-0;
   }
 
   .alert-title {
-    @apply font-semibold;
+    @apply mb-1 font-semibold;
   }
 
   .alert-message {
-    @apply mt-1 text-sm leading-6;
+    @apply text-sm leading-6;
   }
 
-  /* SUCCESS ALERT */
+  /* Alert types */
   .alert-success {
     @apply border-green-200 bg-green-50 text-green-800;
   }
 
-  /* WARNING ALERT */
   .alert-warning {
-    @apply border-amber-200 bg-amber-50 text-amber-900;
+    @apply border-amber-200 bg-amber-50 text-amber-800;
   }
 
-  /* ERROR ALERT */
   .alert-error {
     @apply border-red-200 bg-red-50 text-red-800;
   }
 
-  /* INFORMATION ALERT */
   .alert-info {
     @apply border-blue-200 bg-blue-50 text-blue-800;
-  }
-
-  /* GARDEN CARDS */
-  .card {
-    @apply flex flex-col overflow-hidden rounded-2xl border border-[#DDE3D8] bg-white shadow-sm;
-  }
-
-  .card-image {
-    @apply h-56 w-full object-cover;
-  }
-
-  .card-body {
-    @apply flex flex-1 flex-col justify-between gap-6 p-6;
-  }
-
-  .card-title {
-    @apply text-xl font-bold text-[#293B2B];
-  }
-
-  .card-text {
-    @apply mt-2 leading-6 text-[#667064];
-  }
-
-  .card-footer {
-    @apply mt-6 flex flex-wrap items-center justify-between gap-4;
-  }
-
-  /* GARDENING EXPERT PROFILE */
-  .profile-banner {
-    @apply flex flex-col items-center bg-[#293B2B] px-6 py-8 text-center;
-  }
-
-  .profile-avatar {
-    @apply mb-4 size-24 rounded-full border-4 border-[#D3DFC9] object-cover;
   }
 }
