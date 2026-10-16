@@ -1,34 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bloom & Beyond</title>
   <link href="./src/output.css" rel="stylesheet">
 </head>
+
 <body class="min-h-screen bg-[#F7F5EF] text-[#293B2B]">
 
-  
-<header class="sticky top-0 z-50 bg-[#293B2B] px-6 py-4 text-white shadow-md">
-  <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6">
-    <a href="#" class="shrink-0 text-xl font-bold tracking-wide sm:text-2xl">
-      Bloom & Beyond
-    </a>
 
-    <div class="flex items-center gap-4 sm:gap-6">
-      <a href="#home" class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
-        Home
+  <header class="sticky top-0 z-50 bg-[#293B2B] px-6 py-4 text-white shadow-md">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6">
+      <a href="#" class="shrink-0 text-xl font-bold tracking-wide sm:text-2xl">
+        Bloom & Beyond
       </a>
-      <a href="#buttons" class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
-        Components
-      </a>
-      <a href="#about" class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
-        About
-      </a>
-    </div>
-  </nav>
-</header>
+
+      <div class="flex items-center gap-4 sm:gap-6">
+        <a href="#home"
+          class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
+          Home
+        </a>
+        <a href="#buttons"
+          class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
+          Components
+        </a>
+
+        <a href="#alerts"
+          class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
+          Alerts
+        </a>
+        <a href="#about"
+          class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
+          About
+        </a>
+      </div>
+    </nav>
+  </header>
 
 
   <main class="mx-auto max-w-6xl px-6 py-12">
@@ -58,26 +67,108 @@
       </div>
     </section>
 
-    <section class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-      <h2 class="mb-2 text-2xl font-bold">Growing our library</h2>
-      <p class="text-[#667064]">
-        Next, we will add plant cards, product cards, and success, warning,
-        error, and information alerts.
+
+    <section id="alerts" class="mb-12 rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+      <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-[#66816A]">
+        Clear communication
       </p>
+
+      <h2 class="mb-2 text-2xl font-bold sm:text-3xl">
+        The Alert Garden
+      </h2>
+
+      <p class="mb-6 text-[#667064]">
+        Helpful messages to guide every garden experience.
+      </p>
+
+      <div class="space-y-4">
+
+        <!-- Success alert -->
+        <div class="alert alert-success" role="status">
+          <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div>
+            <h3 class="alert-title">Success!</h3>
+            <p class="alert-message">
+              Your plant has been added to your collection successfully.
+            </p>
+          </div>
+        </div>
+
+        <!-- Warning alert -->
+        <div class="alert alert-warning" role="alert">
+          <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M12 9v4m0 4h.01M10.3 3.9 2.6 17.3
+          A2 2 0 0 0 4.3 20h15.4a2 2 0 0 0 1.7-2.7
+          L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div>
+            <h3 class="alert-title">A little reminder</h3>
+            <p class="alert-message">
+              Your favorite plant may need watering soon. Check its soil before watering.
+            </p>
+          </div>
+        </div>
+
+        <!-- Error alert -->
+        <div class="alert alert-error" role="alert">
+          <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="m15 9-6 6m0-6 6 6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div>
+            <h3 class="alert-title">Something went wrong</h3>
+            <p class="alert-message">
+              We couldn't add this plant to your collection. Please try again.
+            </p>
+          </div>
+        </div>
+
+        <!-- Information alert -->
+        <div class="alert alert-info" role="status">
+          <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 16v-4m0-4h.01" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div>
+            <h3 class="alert-title">Garden tip</h3>
+            <p class="alert-message">
+              Most plants grow best when their light and watering needs are met.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <p class="text-[#667064]">
+      Next, we will add plant cards, product cards, and success, warning,
+      error, and information alerts.
+    </p>
     </section>
   </main>
 
-  
-<footer class="border-t border-[#DDE3D8] bg-[#293B2B] px-6 py-8 text-center text-white">
-  <h2 class="mb-2 text-xl font-bold">Bloom & Beyond</h2>
-  <p class="mb-4 text-sm text-[#E5EBDD]">
-    Grow something beautiful.
-  </p>
-  <p class="text-xs text-[#D3DFC9]">
-    © 2026 Bloom & Beyond. All rights reserved.
-  </p>
-</footer>
+
+  <footer class="border-t border-[#DDE3D8] bg-[#293B2B] px-6 py-8 text-center text-white">
+    <h2 class="mb-2 text-xl font-bold">Bloom & Beyond</h2>
+    <p class="mb-4 text-sm text-[#E5EBDD]">
+      Grow something beautiful.
+    </p>
+    <p class="text-xs text-[#D3DFC9]">
+      © 2026 Bloom & Beyond. All rights reserved.
+    </p>
+  </footer>
 
 
 </body>
+
 </html>
